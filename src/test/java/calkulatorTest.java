@@ -55,7 +55,7 @@ class MainTest {
         int x = 9;
         int y = 3;
         int expected = 3;
-        int actual = calc.devide.apply(x, y);
+        int actual = calc.dev.apply(x, y);
         assertEquals(expected, actual);
     }
 

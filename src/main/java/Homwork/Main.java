@@ -12,11 +12,12 @@ public class Main {
 
         boolean g = calc.isPositive.test(3);
         if (b == 0) {
-            throw new ArithmeticException("device by zero");
+            System.out.println("device by zero");
         } else {
-            c = calc.devide.apply(a, b);
+            c = calc.dev.apply(a, b);
+            calc.println.accept(c);
         }
-        calc.println.accept(c);
+
         int d = calc.multiply.apply(2, 4);
         int e = calc.pow.apply(3);
         int f = calc.abs.apply(4);
