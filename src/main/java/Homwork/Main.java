@@ -6,17 +6,17 @@ public class Main {
 
         Calculator calc = Calculator.instance.get();
         int a = calc.plus.apply(1, 2);
-        int b = calc.minus.apply(0, 1);
+        int b = calc.minus.apply(1, 1);
         int c ;
 
 
         boolean g = calc.isPositive.test(3);
-        if (b == 0) {
-            System.out.println("device by zero");
-        } else {
+//        if (b == 0) {
+//            System.out.println("device by zero");
+//        } else {
             c = calc.dev.apply(a, b);
             calc.println.accept(c);
-        }
+//        }
 
         int d = calc.multiply.apply(2, 4);
         int e = calc.pow.apply(3);
